@@ -47,10 +47,15 @@ class Dialog extends Component {
 }
 
 Dialog.propTypes = {
-    comp: PropTypes.array,
+    //dialog内容区域html展示
     renderHTML: PropTypes.func,
+    //dialog的title
     title: PropTypes.string,
+    //提交按钮的文字描述
+    buttonText：ProTypes.string,
+    //显示dialog
     isOpen:PropTypes.bool,
+    //按钮区域隐藏与否
     hideButton: PropTypes.bool
 }
 
