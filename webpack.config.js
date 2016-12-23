@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    'dist/upload': './index.js',
+    'dist/dialog': './index.js',
     'example/bundle': './example/app.js',
   },
   output: {

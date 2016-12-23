@@ -1,7 +1,7 @@
 import React, {PropTypes, Component} from 'react'
 import classnames from 'classnames'
 import Modal  from 'react-modal'
-import './Dialog.scss'
+import './Dialog.less'
 class Dialog extends Component {
     constructor(props, context) {
         super(props, context)
@@ -49,6 +49,12 @@ class Dialog extends Component {
 Dialog.propTypes = {
     //dialog内容区域html展示
     renderHTML: PropTypes.func,
+    //提交按钮的触发事件
+    handleSaveClicked: PropTypes.func,
+    //打开dialog触发的事件
+    openModal: PropTypes.func,
+    //关闭dialog触发的事件
+    closeModal: PropTypes.func,
     //dialog的title
     title: PropTypes.string,
     //提交按钮的文字描述

@@ -1,3 +1,3 @@
-import Upload from './src/Dialog'
+import Dialog from './src/Dialog'
 
-export default Upload
+export default Dialog
