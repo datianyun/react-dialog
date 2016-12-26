@@ -1,7 +1,7 @@
 # react-dialog
 
-图片上传组件
 
+![alt text](http://img1.gtimg.com/house/pics/hv1/19/116/2172/141263899.png "Title")
 [在线demo](http://datianyun.github.io/dialog "Title")
 ### Installation
 ``` sh
