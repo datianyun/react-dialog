@@ -2,7 +2,7 @@
 
 图片上传组件
 
-[在线demo](http://datianyun.github.io/upload "Title")
+[在线demo](http://datianyun.github.io/dialog "Title")
 ### Installation
 ``` sh
 npm install reactui-upload
@@ -14,16 +14,14 @@ npm install reactui-upload
 
 |name|type|default| description|
 |-----|---|--------|----|
-|onDrop | function |- | 拖拽后的回调|
-|onUpload | function | -| 上传中回调 |
-|className | string | - | 上传控件自定义样式的className |
-|maxSize | string | - | 最大图片尺寸|
-|style | object | -| 控件样式 |
-|supportClick | boolean | true| 是否支持点击 |
-|accept | string | | 上传类型 |
-|multiple | boolean | false | 是否可多次上传|
-|onComplete | function| |上传完成的回调 |
-|uploadUrl| string| | 上传的url |
+|renderHTML | function |- | dialog内容区域html展示|
+|handleSaveClicked | function | -| 提交按钮的触发事件 |
+|openModal | function | - | 打开dialog触发的事件 |
+|closeModal | function | - | 关闭dialog触发的事件|
+|title | string | -| dialog的title |
+|buttonText | string | -| 提交按钮的文字描述 |
+|isOpen | boolean | false| 是否显示组件 |
+|hideButton | boolean | false | 是否隐藏按钮区域|
 ### Demo
 
 ``` sh
@@ -33,6 +31,7 @@ npm run start
 http://localhost:8888/example/
 
 ### Usage
+import Dialog from 'reactui-dialog'
 ``` javascript
-<Upload />
+<Dialog />
 ```
