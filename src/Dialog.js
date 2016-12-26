@@ -58,7 +58,7 @@ Dialog.propTypes = {
     //dialog的title
     title: PropTypes.string,
     //提交按钮的文字描述
-    buttonText：ProTypes.string,
+    buttonText:PropTypes.string,
     //显示dialog
     isOpen:PropTypes.bool,
     //按钮区域隐藏与否

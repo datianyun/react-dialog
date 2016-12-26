@@ -6,15 +6,17 @@ import packageJson from '../package.json'
 class App extends Component {
     constructor(props) {
         super(props)
-        this.state =
+        this.state = {
             //弹框控制
             modalIsOpen:false
         }
     }
-    showDialog(){
+    showDialog(e){
+        e.preventDefault()
         this.setState({modalIsOpen:true})
     }
     hideDialog(){
+        e.preventDefault()
         this.setState({modalIsOpen:false})
     }
     openModal(){
